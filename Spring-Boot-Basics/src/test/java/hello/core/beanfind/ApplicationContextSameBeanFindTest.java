@@ -41,6 +41,10 @@ public class ApplicationContextSameBeanFindTest {
     void findAllBeanByType() {
         Map<String, MemberRepository> beansOfType = ac.getBeansOfType(MemberRepository.class);
 
+        // System.out.println("beansOfType = " + ac.getBeansOfType(MemberRepository.class));
+        // beansOfType = {memberRepository1=hello.core.member.MemoryMemberRepository@a43ce46
+        //                , memberRepository2=hello.core.member.MemoryMemberRepository@340da44c}
+
         for (String key : beansOfType.keySet()) {
                 System.out.println("key  = " + key + ", value = " + beansOfType.get(key));
             }
