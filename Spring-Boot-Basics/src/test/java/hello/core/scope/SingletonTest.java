@@ -22,6 +22,7 @@ public class SingletonTest {
         System.out.println("bean1 = " + singletonBean1);
         System.out.println("bean1 = " + singletonBean2);
         assertThat(singletonBean1).isSameAs(singletonBean2);
+
         ac.close(); //종료
     }
 
