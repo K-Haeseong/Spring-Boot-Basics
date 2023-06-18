@@ -20,7 +20,6 @@ public class BeanLifeCycleTest {
     }
 
 
-
     @Configuration
     static class LifeCycleConfig{
 
